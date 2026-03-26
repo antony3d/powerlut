@@ -1,4 +1,4 @@
-Power Lut Mod 
+Power Lut Mod v0.9.6
 
 Assetto Corsa engine torque/power curve analyzer and modifier tool.
 Features
@@ -12,67 +12,62 @@ Features
     Verbose mode for debugging
 
 Requirements
-pip install matplotlib
-Usage
-Basic run
-python powerlut.py power.lut
-With modifier
-python powerlut.py power.lut +10
-python powerlut.py power.lut -5
-python powerlut.py power.lut '*1.2'
-Export to PNG (no GUI window)
-python powerlut.py power.lut -png
-Verbose mode (debug output)
-python powerlut.py power.lut -v
-Combined options
-python powerlut.py power.lut +10 -v -png
-File Formats
-Input: .lut
-Format: RPM|Torque(Nm)
-Output: .json
-No outer {}
-Comma at the end
-Newline before powerCurve
-100 RPM step interpolation
-1 decimal place precision
-Output: .png
 
-    300 DPI resolution
-    Dark theme
-    Torque (yellow) + Power (red) curves
-    Median lines
-    Power Band (80% peak)
+pip install matplotlib
+
+Usage
+Basic run - powerlut.py (use power.lut for input)
+
+With modifier torque curve
+
+powerlut.py power.lut +10 (add torque curve)
+
+powerlut.py power.lut -5 (- torque)
+
+powerlut.py power.lut '*1.2' (mult torque)
+
+Export to PNG (no GUI window)
+
+python powerlut.py power.lut -png
+
+Verbose mode (debug output)
+
+powerlut.py power.lut -v
+
+Output: .json file:
+
+100 RPM step interpolation
 
 Output: _bph.txt (verbose mode only)
+
 Format: RPM|Power(BHP)
-Statistics Report
-Metric
-	
-Description
-Peak Torque
-	
-Maximum torque value and RPM
-Median Torque
-	
-Median value in working range
-Effective Range
-	
-RPM range where torque is effective
-Peak Power
-	
-Maximum power value and RPM
-Power Band
-	
-RPM range where power 80% of peak
-Median Power
-	
-Median value in working range
-Version
-Current: v0.9.6
-Author
-Anton (antony3d)
-License
-GPL-3.0
-Support
+
+=
+ENGINE CURVE STATISTICS REPORT
+=
+
+[TORQUE]
+
+  Peak Torque:     46.00 Nm @ 3750 RPM
+  
+  Median:          28.00 Nm
+  
+  Effective Range: 1500 – 6000 RPM
+
+[POWER]
+
+  Peak Power:      26.26 BHP @ 4250 RPM
+  
+  Power Band:      3750 – 4750 RPM (≥80% peak)
+  
+  Median:          15.31 BHP
+  
+  Effective Range: 1500 – 6000 RPM
+
+============================================================
+
+License GPL-3.0
+
 For issues, suggestions, or questions, please open an issue on GitHub.
-Made with love for Assetto Corsa community
+
+Made with love for Assetto Corsa community ;)
