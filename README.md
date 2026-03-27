@@ -1,4 +1,3 @@
-Markdown
 # Power Lut Mod `v0.9.6`
 
 **Power Lut Mod** is a specialized tool for analyzing and modifying engine torque/power curves specifically for the **Assetto Corsa** engine.
@@ -73,3 +72,5 @@ Multiply torque by 0.75 (-25%)
     
 *Made with love for the Assetto Corsa community ;)*
 
+
+https://github.com/user-attachments/assets/507d5839-731f-4440-bb33-22d26affa295
