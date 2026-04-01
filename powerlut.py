@@ -10,6 +10,10 @@ Input: torque in Newton-meters (Nm).
 Output: power in brake horsepower (BHP), torque in Newton-meters (Nm).
 """
 
+import matplotlib
+matplotlib.use('TkAgg')
+import matplotlib.pyplot as plt
+
 import sys
 import os
 import argparse
@@ -17,23 +21,22 @@ import json
 import statistics
 import bisect
 from typing import List, Tuple, Optional, Dict
-import matplotlib.pyplot as plt
+
 
 # =============================================================================
-# КОНСТАНТЫ
+# CONST
 # =============================================================================
 
 NAME = "Power lut mod"
 VERSION = "0.9.6"
-NM_RPM_TO_KW = 9549.3  # Константа для перевода Nm и RPM в кВт
-NM_RPM_TO_BHP = 7121.0  # Константа для перевода Nm и RPM в BHP
-BG_COLOR = (28/255, 20/255, 20/255)  # Цвет фона графика
-DEFAULT_FILE = "power.lut"  # Файл по умолчанию
+NM_RPM_TO_KW = 9549.3  # Nm | RPM to kVt
+NM_RPM_TO_BHP = 7121.0  # Nm | RPM to BHP
+BG_COLOR = (28/255, 20/255, 20/255)  # backgrnd for graphics
+DEFAULT_FILE = "power.lut"  
 
 # Глобальный флаг verbose режима
 # Global flag for verbose mode
 VERBOSE = False
-
 
 def parse_lut_file(filepath: str) -> Tuple[List[float], List[float]]:
     """
