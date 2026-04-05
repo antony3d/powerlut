@@ -5,3 +5,5 @@ power_curve.png
 nuitka-crash-report.xml
 dist
 powerlut.dist
+*.exe
+temp_graph.png

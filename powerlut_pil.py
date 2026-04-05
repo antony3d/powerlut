@@ -22,7 +22,7 @@ import subprocess
 # CONST
 # =============================================================================
 NAME = "Power lut mod PIL"
-VERSION = "0.9.1"
+VERSION = "0.9.7"
 NM_RPM_TO_KW = 9549.3  # Nm | RPM to kVt
 NM_RPM_TO_BHP = 7121.0  # Nm | RPM to BHP
 

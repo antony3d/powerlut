@@ -28,7 +28,7 @@ from typing import List, Tuple, Optional, Dict
 # =============================================================================
 
 NAME = "Power lut mod"
-VERSION = "0.9.7"
+VERSION = "0.9.6"
 NM_RPM_TO_KW = 9549.3  # Nm | RPM to kVt
 NM_RPM_TO_BHP = 7121.0  # Nm | RPM to BHP
 BG_COLOR = (28/255, 20/255, 20/255)  # backgrnd for graphics
@@ -1180,3 +1180,4 @@ Examples:
 
 if __name__ == "__main__":
     main()
+
