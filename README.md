@@ -25,8 +25,11 @@ This tool requires Python and the `matplotlib` library for rendering:
 
 **Torque Curve Modifiers**  
 Modify torque values by applying operators to the input .lut file:
+
 `powerlut.py power.lut +10` add 10 Nm
+
 `powerlut.py power.lut -5` subtract 5 Nm
+
 `powerlut.py power.lut *0.75` multiply by 0.75 (-25%)
 
 **Command Flags**
